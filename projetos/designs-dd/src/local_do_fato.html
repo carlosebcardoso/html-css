@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Local do Fato</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="../dist/output.css">
+</head>
+<body class="bg-gray-800 h-screen">
+    <header class="flex items-center p-4 gap-6">
+        <a class="translate-y-1" href="nova_denuncia.html"><span class="material-symbols-outlined text-white scale-150">arrow_back</span></a>
+        <h1 class="font-medium text-2xl text-white">Qual o Local do Ocorrido?</h1>
+    </header>
+    <main class="flex items-center justify-center">
+        <div>
+            <nav class="flex">
+                    <button class="bg-slate-600 text-white py-1 px-4 rounded-t-lg" onclick="openTab('mapa', this)">
+                        Mapa
+                    </button>
+                    <button class="bg-slate-700 text-white py-1 px-4 rounded-t-lg" onclick="openTab('endereco', this)">
+                        Endereço
+                    </button>
+            </nav>
+            <section id="mapa" class="tab flex items-center justify-center bg-slate-600 p-3 rounded-b-xl rounded-tr-xl w-[374px] h-[704px]">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d3985.870643625701!2d-44.25389416088749!3d-2.548987323900255!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1spt-BR!2sbr!4v1697653369349!5m2!1spt-BR!2sbr" width="350" height="680" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </section>
+            <section id="endereco" class="tab hidden flex-col bg-slate-600 p-4 rounded-b-xl rounded-tr-x w-[374px] h-[704px]">
+                <label class="text-white" for="cidade">Cidade:</label>
+                <select class="eInputs" name="cidade" id="cidade"></select>
+                
+                <label class="text-white" for="bairro">Bairro:</label>
+                <input class="eInputs" type="text"  id="bairro">
+                
+                <label class="text-white" for="rua">Rua:</label>
+                <input class="eInputs" type="text" id="rua">
+                
+                <label class="text-white" for="numero">Número:</label>
+                <input class="eInputs" type="text" id="numero">
+
+                <label class="text-white" for="complemento">Complemento:</label>
+                <input class="eInputs" type="text" id="complemento">
+
+                <label class="text-white" for="ponto-de-referencia">Ponto de Referência:</label>
+                <textarea name="ponto-de-referencia" id="ponto-de-referencia" cols="30" rows="10"></textarea>
+            </section>
+            <button class="modal-content">
+                <p>Confirmar</p>
+            </button>
+        </div>
+    </main>
+    <script src="main.js"></script>
+</body>
+</html>

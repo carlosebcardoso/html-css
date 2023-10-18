@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="../dist/output.css">
+    <title>Nova Denúncia</title>
+</head>
+<body class="bg-gray-800 h-screen">
+    <header class="flex items-center p-4 gap-6">
+        <a class="translate-y-1" href="index.html"><span class="material-symbols-outlined text-white scale-150">arrow_back</span></a>
+        <h1 class="font-medium text-2xl text-white">Qual o Assunto da sua Denúnica?</h1>
+    </header>
+    <main>
+        <section>
+            <ul class="assuntos p-4 grid grid-cols-3 gap-x-4 gap-y-5">
+                <li>
+                    <button id="violencia_domestica" class="buttons bg-cyan-500">
+                        <img src="img/violencia-domestica.png" alt="">
+                    </button>
+                    <h6 class="text-center w-[120px]">Violência Doméstica</h6>
+                </li>
+                <li>
+                    <button id="trafico_de_drogas" class="buttons bg-green-500">
+                        <img src="img/traficante-de-drogas.png" alt="">
+                    </button>
+                    <h6 class="text-center w-[120px]">Tráfico de Drogas</h6>
+                </li>
+                <li>
+                    <button id="homicidio" class="buttons bg-blue-500">
+                        <img src="img/assassinato.png" alt="">
+                    </button>
+                    <h6 class="text-center w-[120px]">Homicídio</h6>
+                </li>
+                <li>
+                    <button id="roubo" class="buttons bg-yellow-500">
+                        <img src="img/ladrao.png" alt="">
+                    </button>
+                    <h6 class="text-center w-[120px]">Roubo</h6>
+                </li>
+                <li>
+                    <button id="maus_tratos_animais" class="buttons bg-sky-500">
+                        <img src="img/crueldade-animal.png" alt="">
+                    </button>
+                    <h6 class="text-center w-[120px]">Maus Tratos Animais</h6>
+                </li>
+                <li>
+                    <button id="poluicao" class="buttons bg-violet-500">
+                        <img src="img/poluicao-da-agua.png" alt="">
+                    </button>
+                    <h6 class="text-center w-[120px]">Poluição</h6>
+                </li>
+                <li>
+                    <button id="pessoas_desaparecidas" class="buttons bg-emerald-500">
+                        <img src="https://cdn-icons-png.flaticon.com/512/5757/5757048.png" alt="">
+                    </button>
+                    <h6 class="text-center w-[120px]">Pessoas Desaparecidas</h6>
+                </li>
+                <li>
+                    <button id="queimadas" class="buttons bg-red-600">
+                        <img src="img/queimada.png" alt="">
+                    </button>
+                    <h6 class="text-center w-[120px]">Queimadas</h6>
+                </li>
+                <li>
+                    <button id="fuga_de_presidiarios" class="buttons bg-orange-600">
+                        <img src="img/prisioneiro.png" alt="">
+                    </button>
+                    <h6 class="text-center w-[120px]">Fuga de Presidiários</h6>
+                </li>
+                <li>
+                    <button class="buttons bg-gray-600">
+                        <img src="" alt="">
+                    </button>
+                    <h6 class="text-center w-[120px]"></h6>
+                </li>
+                <li>
+                    <button class="buttons bg-gray-600">
+                        <img src="" alt="">
+                    </button>
+                    <h6 class="text-center w-[120px]"></h6>
+                </li>
+                <li>
+                    <button class="buttons bg-gray-400" id="mBtn">
+                        <img src="img/mais(1).png" alt="">
+                    </button>
+                    <h6 class="text-center w-[120px]">Outros</h6>
+                </li>
+            </ul>
+        </section>
+    </main>
+    <!-- modals -->
+    <div class="modal" id="modal">
+        <div class="modal-content" id="modal-content">
+            <div>
+                <h2 id="modal-title"></h2>
+                <span class="material-symbols-outlined close" id="close">close</span>
+            </div>
+
+            <section>
+                <img id="modal-image" src="" alt="">
+            </section>
+
+            <article>
+                <p>Descrição...
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo ipsam quod laboriosam. Ab itaque aut neque hic. Sit ullam culpa accusamus reiciendis officia ab. Eaque numquam soluta necessitatibus doloribus sunt.
+                </p>
+            </article>
+            <a href="local_do_fato.html">
+                <button class="modal-content pressed">
+                    <p>Confirmar</p>
+                </button>
+            </a>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
